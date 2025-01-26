@@ -1,0 +1,34 @@
+.slider-container {
+  /* width: 98% !important; */
+  margin: 0px auto !important;
+  padding: 40px 0;
+}
+
+.slick-slider {
+  width: 60%;
+  height: 300px;
+  padding: 10px;
+}
+
+.sliders {
+  /* height: 400px; */
+  margin: 10px;
+}
+
+/* Style for all slides */
+.sliders {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.6;
+  transform: scale(0.9);
+  text-align: center;
+  /* padding: 10px; */
+}
+
+/* Highlight the center slide */
+.slick-center .sliders {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+  border-radius: 10px;
+}

@@ -1,0 +1,198 @@
+.footer {
+  background-color: #ff5722;
+  color: white;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Logo section */
+.footer-logo {
+  margin: 0px auto;
+  max-width: 250px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.logo-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Contact section */
+
+.contact-info p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.address-line {
+  margin-left: 24px;
+}
+
+/* Info section */
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info li {
+  margin-bottom: 10px;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-info a:hover {
+  opacity: 0.8;
+}
+
+/* Newsletter section */
+.newsletter-input {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.newsletter-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-input button {
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  color: #ff5722;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-input button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Chat widget */
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+/* .chat-bubble {
+  background: white;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+} */
+
+.chat-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatbot {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2147483639;
+  position: fixed;
+  bottom: 10px;
+  width: 392px;
+  height: 614px;
+  max-width: 100%;
+  max-height: calc(100% + 0px);
+  min-height: 0px;
+  min-width: 0px;
+  background-color: transparent;
+  border: 0px;
+  overflow: hidden;
+  right: 35px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.48px 2.41px -0.38px,
+    rgba(0, 0, 0, 0.17) 0px 4px 20px -0.75px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo,
+  .footer-contact,
+  .footer-info,
+  .footer-newsletter {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
+
+  .address-line {
+    margin-left: 0;
+  }
+  .footer-newsletter {
+    min-width: 100px;
+    max-width: 1005;
+    text-align: center;
+    margin: 0px auto;
+  }
+}
